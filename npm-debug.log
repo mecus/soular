@@ -7,8 +7,8 @@
 6 silly lifecycle soular@1.0.0~pregulp: no script for pregulp, continuing
 7 info lifecycle soular@1.0.0~gulp: soular@1.0.0
 8 verbose lifecycle soular@1.0.0~gulp: unsafe-perm in lifecycle true
-9 verbose lifecycle soular@1.0.0~gulp: PATH: /usr/local/lib/node_modules/npm/bin/node-gyp-bin:/Users/misco/Desktop/Soular/node_modules/.bin:/usr/local/bin:/usr/local/lib/node_modules/npm/bin/node-gyp-bin:/Users/misco/Desktop/Soular/node_modules/.bin:/usr/local/bin:/Users/misco/.rbenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/git/bin:/opt/ImageMagick/bin:/Applications/DevDesktop/drush
-10 verbose lifecycle soular@1.0.0~gulp: CWD: /Users/misco/Desktop/Soular
+9 verbose lifecycle soular@1.0.0~gulp: PATH: /usr/local/lib/node_modules/npm/bin/node-gyp-bin:/Users/emeka/Desktop/soular/node_modules/.bin:/usr/local/bin:/usr/local/lib/node_modules/npm/bin/node-gyp-bin:/Users/emeka/Desktop/soular/node_modules/.bin:/usr/local/bin:/Users/emeka/.rvm/gems/ruby-2.2.1/bin:/Users/emeka/.rvm/gems/ruby-2.2.1@global/bin:/Users/emeka/.rvm/rubies/ruby-2.2.1/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/emeka/local/mysql/bin:/Users/emeka/.rvm/bin
+10 verbose lifecycle soular@1.0.0~gulp: CWD: /Users/emeka/Desktop/soular
 11 silly lifecycle soular@1.0.0~gulp: Args: [ '-c', 'gulp' ]
 12 silly lifecycle soular@1.0.0~gulp: Returned: code: 1  signal: null
 13 info lifecycle soular@1.0.0~gulp: Failed to exec gulp script
@@ -23,7 +23,7 @@
 14 verbose stack     at maybeClose (internal/child_process.js:850:16)
 14 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:215:5)
 15 verbose pkgid soular@1.0.0
-16 verbose cwd /Users/misco/Desktop/Soular
+16 verbose cwd /Users/emeka/Desktop/soular
 17 error Darwin 15.5.0
 18 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "run" "gulp"
 19 error node v5.10.1
