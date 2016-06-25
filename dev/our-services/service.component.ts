@@ -2,7 +2,7 @@ import { Component } from 'angular2/core';
 
 @Component ({
     selector: 'service',
-    template : '<h2>{{title}}</h2>' 
+    templateUrl : 'dev/our-services/service.component.html'  
 })
 
 

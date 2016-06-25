@@ -1,8 +1,10 @@
 import {Component} from 'angular2/core';
-import { NavComponent } from './nav.component';
-import { HomeComponent } from './home.component';
-import { ServiceComponent } from './service.component';
 import { RouteConfig, ROUTER_PROVIDERS, ROUTER_DIRECTIVES } from 'angular2/router';
+
+
+import { HomeComponent } from './home/home.component';
+import { ServiceComponent } from './our-services/service.component';
+import { AboutComponent } from './about-us/about.component';
 
 @Component({
     selector: 'my-app',
@@ -14,8 +16,8 @@ import { RouteConfig, ROUTER_PROVIDERS, ROUTER_DIRECTIVES } from 'angular2/route
 })
 @RouteConfig([
     { path: '/home', name: 'Home', component: HomeComponent, useAsDefault: true  },
-    { path: '/service', name: 'Service', component: ServiceComponent  }
-    // { path: '/about', 'name': 'About', component: AboutComponent }
+    { path: '/service', name: 'Service', component: ServiceComponent  },
+    { path: '/about', 'name': 'About', component: AboutComponent }
 ])
 
 export class AppComponent {

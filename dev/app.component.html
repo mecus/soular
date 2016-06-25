@@ -9,13 +9,14 @@
             </ul>
         </div>
     </nav>
+    <div class="navbar z-depth-2">
     <nav class="second-nav">
         <div class="nav-wrapper container">
             <!--<a href="#!" class="brand-logo">Soular</a>-->
             <ul class="right ">
-                <li><a [routerLink]="['Home']" >Home</a></li>
-                <li><a [routerLink]="['Service']">Service</a></li>
-                <li><a href="#">About us</a></li>
+                <li><a [routerLink]="['Home']" > Home </a></li>
+                <li><a [routerLink]="['Service']"> Service </a></li>
+                <li><a [routerLink]="['About']" > About us </a></li>
                 <li><a href="#">Career</a></li>
                 <li><a href="#">Contact us</a></li>
                 <li><a href="#"><i class="material-icons">menu</i></a></li>
@@ -23,6 +24,7 @@
         </div>
         <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
     </nav>
+    </div>
 </div>
 <div id="route">
     <router-outlet></router-outlet>
