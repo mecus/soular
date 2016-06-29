@@ -22,4 +22,8 @@ import { AboutComponent } from './about-us/about.component';
 
 export class AppComponent {
 
+    slideMenu(){
+        alert("I have been clicked");
+    }
+
 }
