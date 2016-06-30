@@ -1,5 +1,7 @@
-import {Component} from 'angular2/core';
+import {Component, OnInit} from 'angular2/core';
 import { RouteConfig, ROUTER_PROVIDERS, ROUTER_DIRECTIVES } from 'angular2/router';
+
+import { JqueryComponent } from './jquery';
 
 
 import { HomeComponent } from './home/home.component';
@@ -12,7 +14,7 @@ import { AboutComponent } from './about-us/about.component';
     styleUrls: ['src/css/app.css'],
 
     providers: [ ROUTER_PROVIDERS ],
-    directives: [  ROUTER_DIRECTIVES ]
+    directives: [  ROUTER_DIRECTIVES, JqueryComponent ]
 })
 @RouteConfig([
     { path: '/home', name: 'Home', component: HomeComponent, useAsDefault: true  },
@@ -20,10 +22,27 @@ import { AboutComponent } from './about-us/about.component';
     { path: '/about', 'name': 'About', component: AboutComponent }
 ])
 
-export class AppComponent {
+export class AppComponent implements OnInit {
+
+    public slidebar = false;
+
+    constructor(window: Window){
+      
+    }
+  
 
     slideMenu(){
-        alert("I have been clicked");
+       this.slidebar = true;
+       
+
     }
+    onClose(){
+        this.slidebar = false;
+    }
+    ngOnInit(){
+     
+    }
+ 
+
 
 }

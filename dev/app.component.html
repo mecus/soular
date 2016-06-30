@@ -1,5 +1,5 @@
-<div>
-    <nav class="top-nav z-depth-4">
+<div class="top-bar">
+    <nav class="top-nav z-depth-4" >
         <div class="container">
             <a href="#!" class="brand-logo">Soular</a>
             <ul class="right qcontact">
@@ -25,7 +25,32 @@
         <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
     </nav>
     </div>
+    <!--implememting side navigation-->
+    <div class="side-navigation" *ngIf="slidebar">
+        <button (click)="onClose()" right> <i class="material-icons">close</i></button>
+        <ul class="side-bar">
+            <li>Home</li>
+            <li>About</li>
+            <li>Service</li>
+            <li>Contact us</li>
+        </ul>
+    </div>
+
 </div>
 <div id="route">
     <router-outlet></router-outlet>
+</div>
+<!--Implementing JQeury in this page-->
+<sl-jquery></sl-jquery>
+<!--Footer navigation start here-->
+<div>
+    <nav class="footer">
+        <ul>
+            <li>Our Mission</li>
+             <li>Contact us</li>
+              <li>Career</li>
+
+        </ul>
+        <p>Copyright Soular Ltd All Right Reserved</p>
+    </nav>
 </div>
