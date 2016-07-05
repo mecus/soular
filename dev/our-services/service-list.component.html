@@ -1,0 +1,25 @@
+<div class="row">
+    <div class="col s12 m3 l3 service-nav">
+        <ul>
+            <li (click)="onGuard()" class="first" >{{securityService[0]}}</li>
+            <li (click)="onProtect()" >{{securityService[1]}}</li>
+            <li (click)="onSEvent()" >{{securityService[2]}}</li>
+            <li>{{securityService[3]}}</li>
+            <li>{{securityService[4]}}</li>
+
+        </ul>
+    </div>
+    <div class="col s12 m9 l9 service-content">
+        <div *ngIf='guard' class="security-guard">
+            <p>Nunc vehicula dapibus ipsum. Duis venenatis risus non nunc fermentum dapibus. Morbi lorem ante, malesuada in mollis nec, non auctor nec massa. Aenean tempus dui eget felis blandit at fringilla urna ultrices. Suspendisse feugiat, ante et viverra lacinia, lectus sem lobortis dui, ultricies consectetur leo mauris at tortor.</p>
+        </div>
+        <div *ngIf='protection'>
+            <img src="src/images/recruitment.jpg" alt="" style="width: 600px; height: 300px;">
+            <p>Nunc vehicula dapibus ipsum. Duis .</p>
+        </div>
+         <div *ngIf='event'>
+            <img src="src/images/security-1.jpg" alt="" style="width: 600px; height: 300px;">
+            <p>Nunc vehicula dapibus ipsum. Duis .</p>
+        </div>
+    </div>
+</div>

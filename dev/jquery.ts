@@ -5,7 +5,7 @@ declare var jQuery: any;
 @Component({
     selector: 'sl-jquery',
     template : `
-        <button></button>
+        <p></p>
     ` 
 })
 export class JqueryComponent implements OnInit {

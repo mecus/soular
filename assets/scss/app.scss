@@ -36,7 +36,7 @@ ul.qcontact li{
   right: 0px;
   padding: 0px;
   margin: 0px;
-  background-color: rgba(0,0,0, 0.8);
+  background-color: rgba(0,0,0, 0.9);
   width: 300px;
   min-height: 100%;
   z-index: 9999;
@@ -55,4 +55,7 @@ ul.qcontact li{
     }
 
   }
+}
+.navbar-fixed{
+  position: fixed;
 }

@@ -1,5 +1,5 @@
-<div class="top-bar">
-    <nav class="top-nav z-depth-4" >
+<div class="top-bar" id="top-page">
+    <nav class="top-nav z-depth-4">
         <div class="container">
             <a href="#!" class="brand-logo">Soular</a>
             <ul class="right qcontact">
@@ -27,7 +27,7 @@
     </div>
     <!--implememting side navigation-->
     <div class="side-navigation" *ngIf="slidebar">
-        <button (click)="onClose()" right> <i class="material-icons">close</i></button>
+        <button class="waves-effect waves-light btn" (click)="onClose()" right> <i class="material-icons">close</i></button>
         <ul class="side-bar">
             <li>Home</li>
             <li>About</li>
