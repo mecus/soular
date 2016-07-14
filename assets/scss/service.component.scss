@@ -6,27 +6,20 @@
     z-index: -1;
     text-align: center;
     .header-content{
-        background-color: black;
+        background-color: aquamarine;
         margin: 0 auto;
         padding: 0px;
         box-sizing: border-box;
         width: 100%;
-        max-height: 600px; 
+        height: 400px; 
         overflow: hidden;
         position: relative;
         top: -50px;
         display: block;
-        img {
-            width: 100%;
-            height: auto;
-            min-width: 1400px;
-            position: relative;
-            top: -150px;
-        }
     }
     .header-text {
         position: absolute;
-        top: 200px;
+        top: 100px;
         width: 20%;
         left: 50%;
         margin-left: -10%;
@@ -37,24 +30,34 @@
 
     }
 }
-
-.service-nav{
-    position: relative;
-    top: -50px;
-    width: 300px;
-    height: auto;
-    background-color: lightgrey;
-    li{
-    font-size: 20px;
-
-    &:hover{
-        cursor: pointer; 
-        padding-left: 10px;
-        transition: ease-in-out 0.1s;
+#service-row-top, #service-row-middle, #service-row-bottom{
+    margin-bottom: 20px;
+}
+.service-card{
+    padding-bottom: 10px; 
+    margin: 0px auto;
+    width: 100%;
+    background-color: #fff;
+    .service-card-text{
+        text-align: center;
+        h3{
+            font-size: 18px;
+            font-family: Roboto;
+            font-weight: 400;
+        }
+        button{
+            padding: 0px;
+            margin: 0px auto;
+            text-transform: lowercase;
+            width: 60px;
+            height: 25px;
+            font-size: 10px;
+            background: transparent;
+            color: gray;
+            border-radius: 4px;
+            border: 1px solid;
+            border-color: gray;
         }
     }
-    .active{
-    padding-left: 10px;
-    color:red;
-    }
+
 }

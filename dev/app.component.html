@@ -4,8 +4,6 @@
             <a href="#!" class="brand-logo">Soular</a>
             <ul class="right qcontact">
                 <li><h3>02031191019</h3></li>
-                <li> | </li>
-                <li> login</li>
             </ul>
         </div>
     </nav>
@@ -14,9 +12,9 @@
         <div class="nav-wrapper">
             <!--<a href="#!" class="brand-logo">Soular</a>-->
             <ul class="right ">
-                <li><a [routerLink]="['Home']" > Home </a></li>
-                <li><a [routerLink]="['Service']"> Service </a></li>
-                <li><a [routerLink]="['About']" > About us </a></li>
+                <li><a [routerLink]="['./Home']" > Home </a></li>
+                <li><a [routerLink]="['./Service']"> Service </a></li>
+                <li><a [routerLink]="['./About']" > About us </a></li>
                 <li><a href="#">Career</a></li>
                 <li><a href="#">Contact us</a></li>
                 <li><a><i class="material-icons" (click)="slideMenu()" >menu</i></a></li>
@@ -41,16 +39,36 @@
     <router-outlet></router-outlet>
 </div>
 <!--Implementing JQeury in this page-->
-<sl-jquery></sl-jquery>
+<!--<sl-jquery></sl-jquery>-->
 <!--Footer navigation start here-->
-<div>
-    <nav class="footer">
-        <ul>
-            <li>Our Mission</li>
-             <li>Contact us</li>
-              <li>Career</li>
+<div class="footer-container">
+        <div class="row container">
+            <div class="col s12 m4 l4" id="widget-1">
+                <ul>
+                    <li>Home</li>
+                    <li>About us</li>
+                    <li>Services</li>
+                    <li>Career</li>
+                    <li>Contact us</li>
+                </ul>
+                <p>If you have any security concerns or issues regarding your business, property, assets, valuables or VIP’s then Soular Security is the choice for you.
 
-        </ul>
-        <p>Copyright Soular Ltd All Right Reserved</p>
-    </nav>
+    READ MORE</p>
+            </div>
+            <div class="col s12 m4 l4" id="widget-2">
+                <p>If you have any security concerns or issues regarding your business, property, assets, valuables or VIP’s then Soular Security is the choice for you.
+
+    READ MORE</p>
+            </div>
+            <div class="col s12 m4 l4" id="widget-3">
+                <p>If you have any security concerns or issues regarding your business, property, assets, valuables or VIP’s then Soular Security is the choice for you.
+
+    READ MORE</p>
+            </div>
+        </div>
 </div>
+<nav class="footer">
+    <ul>
+        <li>copyright 2016 Soular Security Ltd</li>
+    </ul>
+</nav>

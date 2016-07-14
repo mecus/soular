@@ -59,3 +59,11 @@ ul.qcontact li{
 .navbar-fixed{
   position: fixed;
 }
+.footer-container{
+  background-color: $secondary-color;
+  height: 400px;
+}
+.footer{
+  height: 60px;
+  background-color: $other-color;
+}

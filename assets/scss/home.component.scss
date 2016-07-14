@@ -43,9 +43,12 @@ $other-color: #011627;
           
         }
         #header-text {
+            width: 400px;
             margin: 0px auto;
             position: absolute;
-            top: 25%;
+            top: 30%;
+            left: 50%;
+            margin-left: -200px;
             text-align: center;
            
             h1{
@@ -81,6 +84,7 @@ $other-color: #011627;
 
 
 .why-soular {
+    display: none;
     margin: 0 auto;
     position: relative;
     top: -120px;
@@ -212,6 +216,13 @@ $other-color: #011627;
 
 }
 }
+.tagLine{
+    margin: 50 auto;
+    text-align: center;
+    .tag-text{
+        color: $other-color;
+    }
+}
 .callToAction{
     margin: 50px 0px;
     background-color: #000;
@@ -220,8 +231,9 @@ $other-color: #011627;
     padding: 50px 0px;
     h3 {
         font-size: 1.5em;
-        color: red;
+        color: white;
         }
+    ul>li{color: grey; display: inline-flex; }
      }
 }
 section#service-collection{
@@ -260,13 +272,19 @@ section#service-collection{
             
         }
         .img-card-text{
+            background-color: red;
+            margin: 0px;
             display: block;
             position: absolute;
-            top: 85%;
+            top: 86%;
             z-index: 9999;
             h3{
-                color: red;
+                color: #fff;
                 font-size: 16px;
+                font-weight: 800;
+                font-family: Roboto;
+                letter-spacing: 1px;
+                padding: 0px 10px;
             }
         }
     }  
@@ -300,3 +318,47 @@ section#service-collection{
         transition: 2s;
     }  
  } 
+
+ .testimony-container{
+     margin: 50px auto;
+     height: 500px;
+     background-color: black;
+     background-image: url('./src/images/soular1.jpg');
+     background-attachment: fixed;
+     position: relative;
+     text-align: center;
+     p {color: #fff;}
+     h3{color: #fff;}
+     h6{color: lightcoral;}
+     h5{
+         color: #fff;
+     }
+     .testimony-container-cover{
+         background-color: #000;
+         height: 500px;
+         opacity: 0.9;
+         padding-top: 60px;
+        .testimony{
+         position: relative;
+         left: 50%;
+         margin-left: -100px;
+         display: block;
+         text-align: center;
+         width: 200px;
+         height: 200px;
+         background-color: aliceblue;
+         border-radius: 50%;
+         .testimony-wrapper{
+             background-color: black;
+             img{
+                 width: 200px;
+                 height: 200px;
+                 border-radius: 50%;
+                 border: 1px solid;
+                 border-color: #fff;
+                }
+            }
+        }
+     }
+
+ }

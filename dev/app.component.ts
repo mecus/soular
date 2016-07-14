@@ -1,5 +1,5 @@
 import {Component, OnInit, ElementRef} from 'angular2/core';
-import { RouteConfig, ROUTER_PROVIDERS, ROUTER_DIRECTIVES } from 'angular2/router';
+import { RouteConfig, ROUTER_DIRECTIVES } from 'angular2/router';
 
 import { JqueryComponent } from './jquery';
 
@@ -15,13 +15,13 @@ import { Angular2Carousel } from './carousel_component/my-carousel';
     templateUrl: 'dev/app.component.html',
     styleUrls: ['src/css/app.css'],
 
-    providers: [ ROUTER_PROVIDERS ],
+    
     directives: [  ROUTER_DIRECTIVES, JqueryComponent, Angular2Carousel ]
 })
 @RouteConfig([
-    { path: '/home', name: 'Home', component: HomeComponent, useAsDefault: true  },
-    { path: '/service', name: 'Service', component: ServiceComponent  },
-    { path: '/about', 'name': 'About', component: AboutComponent }
+    { path: '/home', as: 'Home', component: HomeComponent, useAsDefault: true  },
+    { path: '/services/..', as: 'Service', component: ServiceComponent, useAsDefault: false  },
+    { path: '/about', as: 'About', component: AboutComponent }
 ])
 
 export class AppComponent implements OnInit {
@@ -42,11 +42,9 @@ export class AppComponent implements OnInit {
         this.slidebar = false;
     }
     ngOnInit(){
-      document.getElementById('top-page').onscroll = function() {
-        alert("scrolling");
-      }
-    }
- 
+
+    } 
+
 
 
 }
